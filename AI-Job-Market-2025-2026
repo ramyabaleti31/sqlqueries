@@ -1,0 +1,507 @@
+# 🤖 AI Job Market Analytics (2025–2026)
+
+## Executive Summary
+
+The Artificial Intelligence job market is experiencing unprecedented growth driven by advancements in Machine Learning, Generative AI, Large Language Models (LLMs), and AI-powered business transformation. This project analyzes AI job postings from 2025–2026 to uncover hiring trends, salary benchmarks, skill demand, remote work opportunities, and the growing importance of LLM-focused roles.
+
+Using Python, SQL, and Power BI, this project transforms raw job posting data into actionable insights for recruiters, job seekers, educational institutions, and business leaders.
+
+---
+
+# Business Problem
+
+Organizations and professionals face several challenges in understanding the rapidly changing AI labor market:
+
+* Which AI roles are most in demand?
+* What skills command the highest salaries?
+* Which industries are investing heavily in AI talent?
+* How significant is the growth of LLM and Generative AI positions?
+* Which countries provide the best AI career opportunities?
+
+This project provides data-driven answers to these questions.
+
+---
+
+# Dataset Overview
+
+### Dataset Size
+
+* Total Records: 1,500 AI Job Postings
+* Years Covered: 2025–2026
+* Multiple Countries and Industries
+* Salary Data Included
+* LLM and Generative AI Roles Included
+
+### Key Attributes
+
+| Category        | Variables                             |
+| --------------- | ------------------------------------- |
+| Job Information | Job Title, Job Category               |
+| Compensation    | Annual Salary, Salary Range           |
+| Experience      | Entry, Mid, Senior, Lead              |
+| Geography       | Country, City                         |
+| Employment      | Remote, Hybrid, Onsite                |
+| Industry        | Technology, Healthcare, Finance, etc. |
+| Demand Metrics  | Demand Score, Growth %                |
+| AI Metrics      | AI Salary Premium, LLM Role           |
+| Skills          | Required Skills                       |
+
+---
+
+# Project Workflow
+
+```text
+Data Collection
+        ↓
+Data Cleaning
+        ↓
+Feature Engineering
+        ↓
+Exploratory Data Analysis
+        ↓
+SQL Analysis
+        ↓
+KPI Development
+        ↓
+Power BI Dashboard
+        ↓
+Business Insights
+        ↓
+Recommendations
+```
+
+---
+
+# Tools Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SQL
+* Power BI
+* Excel
+* GitHub
+
+---
+
+# Data Cleaning & Preparation
+
+### Data Quality Checks
+
+* Removed duplicate records
+* Checked missing values
+* Standardized categorical fields
+* Validated salary data
+* Created posting date fields
+
+### Feature Engineering
+
+#### Salary Buckets
+
+* Low
+* Medium
+* High
+* Very High
+* Elite
+
+#### Role Classification
+
+* LLM Role
+* Non-LLM Role
+
+#### Work Arrangement
+
+* Remote
+* Hybrid
+* Onsite
+
+---
+
+# Key Performance Indicators (KPIs)
+
+## Hiring KPIs
+
+* Total AI Jobs
+* Hiring Countries
+* Hiring Industries
+* Remote Job Percentage
+* LLM Job Percentage
+
+## Salary KPIs
+
+* Average Salary
+* Median Salary
+* Salary Premium %
+* Highest Paying Category
+
+## Demand KPIs
+
+* Average Demand Score
+* Demand Growth %
+* Industry Demand Index
+
+---
+
+# Exploratory Data Analysis
+
+## 1. AI Job Category Distribution
+
+### Objective
+
+Understand which AI domains dominate hiring demand.
+
+![AI Job Distribution](images/job_distribution.png)
+
+### Insight
+
+AI Engineering, Machine Learning Engineering, and Generative AI roles account for a significant share of job postings.
+
+---
+
+## 2. Top Hiring Countries
+
+### Objective
+
+Identify geographic AI talent hotspots.
+
+![Top Hiring Countries](images/top_hiring_countries.png)
+
+### Insight
+
+The United States leads global AI hiring, followed by the United Kingdom, Canada, and China.
+
+---
+
+## 3. Salary Analysis by Job Category
+
+### Objective
+
+Compare compensation across AI specializations.
+
+![Salary by Category](images/salary_by_category.png)
+
+### Insight
+
+AI Architects, LLM Engineers, and AI Infrastructure Specialists command the highest salaries.
+
+---
+
+## 4. Salary Analysis by Experience Level
+
+### Objective
+
+Measure compensation growth with experience.
+
+![Salary by Experience](images/salary_by_experience.png)
+
+### Insight
+
+Lead-level professionals earn substantially more than Entry-Level candidates, reflecting the growing value of expertise.
+
+---
+
+## 5. Industry Demand Analysis
+
+### Objective
+
+Evaluate AI adoption across industries.
+
+![Industry Demand](images/industry_demand.png)
+
+### Insight
+
+Technology, Healthcare, and Finance sectors are investing heavily in AI talent acquisition.
+
+---
+
+## 6. Remote Work Analysis
+
+### Objective
+
+Understand the impact of flexible work arrangements.
+
+![Remote Work Analysis](images/remote_work_analysis.png)
+
+### Insight
+
+A significant percentage of AI positions offer remote or hybrid work opportunities.
+
+---
+
+## 7. Demand Score Analysis
+
+### Objective
+
+Identify the most sought-after AI domains.
+
+![Demand Score Analysis](images/demand_score_analysis.png)
+
+### Insight
+
+Generative AI and AI Engineering roles show the strongest demand indicators.
+
+---
+
+## 8. LLM vs Non-LLM Analysis
+
+### Objective
+
+Measure the impact of Generative AI hiring.
+
+![LLM Analysis](images/llm_analysis.png)
+
+### Insight
+
+LLM-focused positions offer higher salaries and stronger growth than traditional AI roles.
+
+---
+
+## 9. AI Salary Premium Analysis
+
+### Objective
+
+Analyze compensation advantages associated with AI expertise.
+
+![Salary Premium Analysis](images/salary_premium.png)
+
+### Insight
+
+Organizations pay substantial salary premiums for specialized AI and LLM skills.
+
+---
+
+## 10. Skills Demand Analysis
+
+### Objective
+
+Identify the most requested technical skills.
+
+![Skills Analysis](images/skills_analysis.png)
+
+### Top Skills
+
+* Python
+* SQL
+* Machine Learning
+* Deep Learning
+* AWS
+* Azure
+* LangChain
+* TensorFlow
+* PyTorch
+* Generative AI
+
+### Insight
+
+Python remains the dominant skill across AI job postings.
+
+---
+
+# Power BI Dashboard
+
+## Dashboard Pages
+
+### Page 1: Executive Overview
+
+KPIs:
+
+* Total Jobs
+* Average Salary
+* Demand Score
+* Remote %
+* LLM %
+
+Visuals:
+
+* Hiring Trend
+* Jobs by Country
+* Jobs by Industry
+
+---
+
+### Page 2: Salary Analytics
+
+Visuals:
+
+* Salary by Job Category
+* Salary by Experience
+* Salary by Country
+* Salary Tier Distribution
+
+---
+
+### Page 3: Skills Intelligence
+
+Visuals:
+
+* Top Skills
+* Skill Frequency
+* Skills by Role
+* Skills vs Salary
+
+---
+
+### Page 4: Generative AI Analytics
+
+Visuals:
+
+* LLM Hiring Trend
+* LLM Salary Comparison
+* LLM Demand Growth
+* Top LLM Roles
+
+---
+
+### Page 5: Remote Work Analytics
+
+Visuals:
+
+* Remote vs Hybrid vs Onsite
+* Salary by Work Arrangement
+* Geographic Distribution
+
+---
+
+# Key Findings
+
+## Finding 1
+
+AI Engineer, Machine Learning Engineer, and Generative AI Engineer are among the most demanded positions.
+
+## Finding 2
+
+LLM-focused roles command significantly higher salaries than traditional AI positions.
+
+## Finding 3
+
+Python is the most requested technical skill, appearing in a majority of job postings.
+
+## Finding 4
+
+Healthcare and Finance are emerging as major consumers of AI talent.
+
+## Finding 5
+
+Remote work has become a mainstream offering within AI hiring.
+
+## Finding 6
+
+Organizations pay substantial premiums for advanced AI and Generative AI expertise.
+
+---
+
+# Business Recommendations
+
+## For Job Seekers
+
+Prioritize learning:
+
+* Python
+* SQL
+* Machine Learning
+* Deep Learning
+* LLM Engineering
+* LangChain
+* Cloud Platforms
+
+---
+
+## For Recruiters
+
+Focus recruitment efforts on:
+
+* LLM Engineers
+* AI Engineers
+* AI Product Managers
+* Generative AI Specialists
+
+---
+
+## For Organizations
+
+* Invest in AI talent retention
+* Offer flexible work arrangements
+* Expand AI upskilling initiatives
+
+---
+
+## For Educational Institutions
+
+Update curricula to include:
+
+* Generative AI
+* Prompt Engineering
+* RAG Systems
+* AI Agents
+* MLOps
+
+---
+
+# Business Impact
+
+This project enables organizations to:
+
+* Understand AI hiring trends
+* Benchmark salaries
+* Optimize recruitment strategies
+* Improve workforce planning
+* Identify emerging AI skill requirements
+
+---
+
+# Repository Structure
+
+```text
+AI-Job-Market-Analytics/
+│
+├── data/
+│   ├── raw/
+│   └── cleaned/
+│
+├── notebooks/
+│   ├── Data_Cleaning.ipynb
+│   ├── EDA.ipynb
+│
+├── sql/
+│   ├── schema.sql
+│   └── analysis_queries.sql
+│
+├── powerbi/
+│   └── AI_Job_Market_Dashboard.pbix
+│
+├── images/
+│   ├── job_distribution.png
+│   ├── top_hiring_countries.png
+│   ├── salary_by_category.png
+│   ├── salary_by_experience.png
+│   ├── industry_demand.png
+│   ├── remote_work_analysis.png
+│   ├── demand_score_analysis.png
+│   ├── llm_analysis.png
+│   ├── salary_premium.png
+│   └── skills_analysis.png
+│
+├── README.md
+│
+└── requirements.txt
+```
+
+---
+
+# Author
+
+**Ramya**
+
+### Skills Demonstrated
+
+* Data Cleaning
+* Exploratory Data Analysis
+* SQL Analysis
+* Data Visualization
+* KPI Design
+* Power BI Dashboarding
+* Business Intelligence
+* Workforce Analytics
+* Data Storytelling
