@@ -1,0 +1,387 @@
+# 📊 Telecom Customer Churn Analytics
+
+## Project Overview
+
+Customer churn is one of the most critical challenges faced by telecom companies. Retaining existing customers is significantly less expensive than acquiring new ones. This project analyzes customer behavior, service usage, billing patterns, and contract renewal information to identify the key drivers of churn and provide actionable retention strategies.
+
+---
+
+## Business Problem
+
+Telecom providers lose substantial revenue when customers discontinue services. The objective of this project is to understand customer churn behavior and answer the following business questions:
+
+* What percentage of customers are churning?
+* What factors contribute most to churn?
+* How does contract renewal affect retention?
+* Does customer service experience influence churn?
+* Which customer segments are at the highest risk?
+* What actions can reduce churn and protect revenue?
+
+---
+
+## Dataset Information
+
+### Dataset Size
+
+* Total Customers: 3,333
+* Features: 11
+* Target Variable: Churn
+
+### Features
+
+| Feature         | Description              |
+| --------------- | ------------------------ |
+| Churn           | Customer churn status    |
+| AccountWeeks    | Customer tenure          |
+| ContractRenewal | Contract renewal status  |
+| DataPlan        | Data plan subscription   |
+| DataUsage       | Monthly data usage       |
+| CustServCalls   | Customer service calls   |
+| DayMins         | Daytime usage            |
+| DayCalls        | Daytime calls            |
+| MonthlyCharge   | Monthly bill amount      |
+| OverageFee      | Additional usage charges |
+| RoamMins        | Roaming minutes          |
+
+---
+
+# Project Workflow
+
+```text
+Data Collection
+        ↓
+Data Cleaning
+        ↓
+Exploratory Data Analysis
+        ↓
+SQL Analysis
+        ↓
+KPI Development
+        ↓
+Power BI Dashboard
+        ↓
+Business Insights
+        ↓
+Recommendations
+```
+
+---
+
+# Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SQL
+* Power BI
+* Excel
+* GitHub
+
+---
+
+# Data Cleaning
+
+### Steps Performed
+
+* Loaded and inspected dataset
+* Verified data types
+* Removed duplicate records
+* Checked missing values
+* Standardized column names
+* Created customer tenure segments
+* Created high-usage customer segments
+* Prepared data for analysis and dashboarding
+
+---
+
+# Exploratory Data Analysis
+
+The analysis focused on identifying the major drivers of churn.
+
+## Questions Explored
+
+* How many customers churn?
+* Do contract renewals improve retention?
+* Do support calls influence churn?
+* Do higher monthly charges increase churn?
+* Are long-tenure customers more loyal?
+* Does data plan adoption reduce churn?
+
+---
+
+# Key Performance Indicators (KPIs)
+
+### Customer KPIs
+
+* Total Customers
+* Churned Customers
+* Retained Customers
+* Churn Rate (%)
+* Retention Rate (%)
+
+### Revenue KPIs
+
+* Average Monthly Revenue
+* Revenue at Risk
+* Average Customer Value
+
+### Customer Experience KPIs
+
+* Contract Renewal Rate
+* Average Customer Service Calls
+* Average Customer Tenure
+
+---
+
+# Visualizations
+
+## 1. Customer Churn Distribution
+
+**Objective:** Understand overall churn percentage.
+
+![Customer Churn Distribution](images/churn_distribution.png)
+
+### Insight
+
+The chart highlights the proportion of churned versus retained customers and establishes the baseline churn rate.
+
+---
+
+## 2. Contract Renewal vs Churn
+
+**Objective:** Evaluate the impact of contract renewal on retention.
+
+![Contract Renewal vs Churn](images/contract_renewal_vs_churn.png)
+
+### Insight
+
+Customers who fail to renew their contracts exhibit significantly higher churn rates.
+
+---
+
+## 3. Customer Service Calls vs Churn
+
+**Objective:** Analyze customer support behavior.
+
+![Customer Service Calls vs Churn](images/support_calls_vs_churn.png)
+
+### Insight
+
+Customers making frequent support calls are more likely to churn, indicating dissatisfaction or unresolved issues.
+
+---
+
+## 4. Monthly Charges vs Churn
+
+**Objective:** Compare billing amounts between retained and churned customers.
+
+![Monthly Charges vs Churn](images/monthly_charge_vs_churn.png)
+
+### Insight
+
+Customers with higher monthly bills tend to churn more frequently.
+
+---
+
+## 5. Data Plan Adoption Analysis
+
+**Objective:** Analyze the impact of data plans on retention.
+
+![Data Plan Analysis](images/data_plan_vs_churn.png)
+
+### Insight
+
+Subscribers with data plans generally exhibit stronger loyalty and lower churn rates.
+
+---
+
+## 6. Customer Tenure Analysis
+
+**Objective:** Understand churn behavior across customer lifecycle stages.
+
+![Customer Tenure Analysis](images/tenure_analysis.png)
+
+### Insight
+
+New customers demonstrate the highest churn rates, while long-tenure customers show stronger retention.
+
+---
+
+## 7. Correlation Heatmap
+
+**Objective:** Identify relationships between features.
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+### Insight
+
+Customer service calls, monthly charges, and contract renewal status are among the strongest churn indicators.
+
+---
+
+## 8. Customer Value Analysis
+
+**Objective:** Identify high-value customers at risk.
+
+![Customer Value Analysis](images/customer_value_analysis.png)
+
+### Insight
+
+The scatter plot highlights customers generating significant revenue who may require targeted retention efforts.
+
+---
+
+## 9. Top Churn Drivers
+
+**Objective:** Identify the variables most strongly associated with churn.
+
+![Top Churn Drivers](images/churn_drivers.png)
+
+### Insight
+
+Support calls, contract renewal status, and monthly charges are among the most influential churn factors.
+
+---
+
+# SQL Analysis
+
+### Churn Rate Analysis
+
+Calculated overall customer churn percentage.
+
+### Contract Renewal Analysis
+
+Compared churn rates across renewal groups.
+
+### Revenue Analysis
+
+Measured average customer value and revenue exposure.
+
+### Customer Segmentation
+
+Identified high-risk customer groups.
+
+---
+
+# Key Insights
+
+### Insight 1
+
+Customers without contract renewals are significantly more likely to leave.
+
+### Insight 2
+
+High customer service call frequency is strongly associated with churn.
+
+### Insight 3
+
+Higher monthly charges and overage fees increase customer attrition.
+
+### Insight 4
+
+Long-tenure customers demonstrate stronger loyalty.
+
+### Insight 5
+
+Data plan subscribers show higher retention rates.
+
+### Insight 6
+
+Customer service quality appears to be a major determinant of customer satisfaction.
+
+---
+
+# Business Recommendations
+
+## Improve Contract Renewal Programs
+
+* Offer renewal incentives
+* Implement proactive renewal reminders
+* Launch loyalty programs
+
+## Enhance Customer Support
+
+* Reduce resolution times
+* Improve first-call resolution rates
+* Monitor repeat support requests
+
+## Optimize Pricing Strategy
+
+* Review overage fee structures
+* Offer flexible plans
+* Provide personalized pricing options
+
+## Protect High-Value Customers
+
+* Identify customers with high revenue contribution
+* Implement churn prediction alerts
+* Prioritize retention campaigns
+
+---
+
+# Business Impact
+
+This project enables telecom organizations to:
+
+* Reduce customer churn
+* Improve customer satisfaction
+* Protect recurring revenue
+* Improve retention strategies
+* Support data-driven decision making
+
+---
+
+# Project Structure
+
+```text
+Telecom-Churn-Analytics/
+│
+├── data/
+│   └── telecom_churn.csv
+│
+├── notebooks/
+│   ├── Data_Cleaning.ipynb
+│   ├── EDA.ipynb
+│
+├── sql/
+│   ├── schema.sql
+│   └── churn_analysis.sql
+│
+├── images/
+│   ├── churn_distribution.png
+│   ├── contract_renewal_vs_churn.png
+│   ├── support_calls_vs_churn.png
+│   ├── monthly_charge_vs_churn.png
+│   ├── data_plan_vs_churn.png
+│   ├── tenure_analysis.png
+│   ├── correlation_heatmap.png
+│   ├── customer_value_analysis.png
+│   └── churn_drivers.png
+│
+├── powerbi/
+│   └── Telecom_Churn_Dashboard.pbix
+│
+├── README.md
+│
+└── requirements.txt
+```
+
+---
+
+# Author
+
+**Ramya**
+
+### Skills Demonstrated
+
+* Data Cleaning
+* Exploratory Data Analysis
+* SQL
+* Data Visualization
+* KPI Development
+* Power BI
+* Business Intelligence
+* Data Storytelling
+* Customer Analytics
